@@ -13,7 +13,10 @@
 body{
     background: var(--gray);
     font-family: Verdana;
+    color: white;
 }
+
+/*Elementos Cabeçalho- Header*/
 header .container{
     display: flex;
     flex-direction: row;
@@ -24,14 +27,68 @@ header .container{
 header .logo{
     color: var(--yellow);
     font-size: 40px;
-    margin-left: 10px;
 }
 
 header nav a{
     text-decoration: none;
+    font-size: 14px;
     color: #FFFFFF;
 }
 
 header nav a:hover{
     color:#FFFFFF;
+}
+
+/*main - Principal*/
+
+.container{
+    margin-left: 20px;
+}
+
+.capa-principal{
+    font-size: 14px;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7) 100%), url(../img/one-piece-hor.jpeg);
+    height: 390px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.titulo{
+    font-size: 35px;
+    margin-top: 20%;
+}
+
+.descricao{
+    margin-bottom: 30px;
+}
+
+.botao{
+    background-color: rgba(10,0,0, 0.5);
+    border: none;
+    padding: 15px 30px;
+    color:white;
+    font-family: Verdana;
+    font-size: 16px;
+    margin-right: 20px;
+
+    cursor: pointer;
+    transition: 0.5s ease all;
+
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.capa-principal .container{
+    width: 70%;
 }
