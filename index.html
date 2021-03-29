@@ -4,13 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="script" href="./js/index.js">
 
         <!-- OWL Css-->
-        <link rel="stylesheet" href="./css/owl/owl.theme.default.min.css">
-        <link rel="stylesheet" href="./css/owl/owl.carousel.css">
+        <link rel="stylesheet" href="./lib/dist/assets/owl.carousel.css">
+        <link rel="stylesheet" href="./lib/dist/assets/owl.theme.default.css">
 
-        <title>Mangá Read</title>
+        <title>carousel</title>
     </head>
     <body>
         <header>
@@ -30,7 +29,8 @@
                 <div class="container">
                     <h3 class="titulo">ONE PIECE</h3>
                     <p class="descricao">
-                        One Piece começa quando Gol D. Roger, o Rei Dos Piratas que possuiu tudo nesse mundo, antes de ser executado, diz que
+                        One Piece começa quando Gol D. Roger, o Rei Dos Piratas que possuiu tudo nesse mundo, antes de ser
+                        executado, diz que
                         escondeu o seu tesouro em algum lugar da Grand Line, um oceano extremamente perigoso.
                     </p>
                     <div class="botoes">
@@ -46,8 +46,58 @@
                 </div>
             </div>
         </main>
-        <script src="./js/owl/jquery.min.js"></script>
-        <script src="./js/owl/owl.carousel.min.js"></script>
+        <div>
+
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./img/m01.jpg">
+                </div>
+                <div class="item">
+                    <img src="./img/m02.jpg">
+                </div>
+                <div class="item">
+                    <img src="./img/m08.jpg">
+                </div>
+                <div class="item">
+                    <img src="./img/m04.jpg">
+                </div>
+                <div class="item">
+                    <img src="./img/m06.jpg">
+                </div>
+                <div class="item">
+                    <img src="./img/m09.jpg">
+                </div>
+                <div class="item">
+                    <img src="./img/m10.jpg">
+                </div>
+            
+            </div>
+        </div>
+
         <script src="https://kit.fontawesome.com/b0deac208a.js" crossorigin="anonymous"></script>
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="./lib/dist/owl.carousel.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    loop:true,
+                    margin:10,
+                    nav: false,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:2
+                        },
+                        1000:{
+                            items:4
+                        }
+                    }
+                });
+            });
+        </script>
+
     </body>
 </html>
