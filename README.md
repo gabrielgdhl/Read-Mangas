@@ -1,11 +1,9 @@
 # Manga Read :nerd_face::book:
 <p align="center">
-    Imagem Tela Cheia
     <img width="470" src="/img/assets/tela-cheia.png">
 </p>
 
 <p align="center">
-    imagem tela pequena
     <img width="470" src="/img/assets/tela-tablet.png">
 </p>
 
